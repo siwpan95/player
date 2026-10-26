@@ -231,7 +231,7 @@ class WMPVisualizer:
     def hsv_to_rgb(self, h, s, v):
         """HSV转RGB颜色"""
         if s == 0:
-            r = g = b = int(v * 255)
+            r = g = b = v
         else:
             h = h * 6
             i = int(h)
